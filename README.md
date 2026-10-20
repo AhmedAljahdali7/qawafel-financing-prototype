@@ -2,6 +2,8 @@
 
 **Qawafel Graduate Software Engineer assessment, Task 3**
 
+[Open the live dashboard](https://ahmedaljahdali7.github.io/qawafel-financing-prototype/output/dashboard.html)
+
 A small tool that turns a wholesaler's invoices and bank transactions into a short dashboard a credit analyst can use to decide on a receivables-financing request. It gives a **suggested decision**, a **suggested facility size**, and the **reason behind every rule**, so the analyst can check the logic and disagree with it.
 
 > All data is made up. The company ("Al Waha Foods Trading", a Jeddah food wholesaler) and its 20 customers do not exist.
