@@ -1,0 +1,192 @@
+{
+  "as_of": "2026-10-15",
+  "period": [
+    "2025-10",
+    "2026-09"
+  ],
+  "gross_sales": 5003076.48,
+  "credit_notes": 86305.36,
+  "net_sales": 4916771.12,
+  "credit_note_rate": 0.01725045786227917,
+  "avg_monthly_net_sales": 409731.0,
+  "trend_last3_vs_first3": -0.14866883453118207,
+  "peak_month": "2026-03",
+  "monthly": {
+    "2025-10": 454641.0,
+    "2025-11": 377083.0,
+    "2025-12": 375301.0,
+    "2026-01": 361903.0,
+    "2026-02": 492470.0,
+    "2026-03": 533365.0,
+    "2026-04": 491677.0,
+    "2026-05": 354895.0,
+    "2026-06": 447859.0,
+    "2026-07": 268950.0,
+    "2026-08": 373154.0,
+    "2026-09": 385474.0
+  },
+  "dso_paid_days": 43.498525073746315,
+  "late_rate": 0.15191740412979352,
+  "very_late_rate": 0.05457227138643068,
+  "avg_days_late_when_late": 31.553398058252426,
+  "top5_share": 0.7137498965436564,
+  "hhi": 1389.2737379461744,
+  "customers": 20,
+  "aging": {
+    "Not yet due": 451346.0,
+    "1-30 past due": 34525.0,
+    "31-60 past due": 4582.0,
+    "61-90 past due": 17783.0,
+    "90+ past due": 0.0
+  },
+  "open_total": 508236.12,
+  "reconciliation": {
+    "paid_invoices": 680,
+    "matched_invoices": 641,
+    "match_rate_count": 0.9426470588235294,
+    "match_rate_value": 0.9427197136369071,
+    "by_method": {
+      "Reference": 302,
+      "Batch reference": 209,
+      "Amount and date": 126,
+      "Unmatched": 39,
+      "Short-paid": 4
+    },
+    "short_paid_count": 17,
+    "short_paid_value": 6805.179999999999,
+    "unexplained_credits": 9,
+    "unexplained_value": 147890.53,
+    "customer_credits_total_incl_vat": 5085934.61,
+    "paid_invoices_total_incl_vat": 5245301.640000001,
+    "unmatched_paid_value": 300452.3800000008
+  },
+  "bank": {
+    "credits_total": 6553910.66,
+    "debits_total": 5822566.0600000005,
+    "opening_balance": 2500000.0,
+    "closing_balance": 3231344.6,
+    "lowest_balance": 1922994.79,
+    "balance_rows_wrong": 0,
+    "balance_check_ok": true,
+    "cash_deposits_value": 1388192.33,
+    "cash_deposits_count": 61,
+    "cash_share_of_credits": 0.2118112989352223
+  },
+  "eligible_receivables": 371412.960625,
+  "pool_before_cap": 469459.77,
+  "excluded": {
+    "total_open": 508236.12,
+    "overdue_over_60": 17783.03,
+    "watch_debtors": 20993.32,
+    "concentration_trim": 98046.80937500001
+  },
+  "limit_low": 259989.0724375,
+  "limit_high": 297130.36850000004,
+  "checks": [
+    {
+      "name": "Bank data supports invoices",
+      "ok": true,
+      "detail": "94% of paid invoice value traced to bank credits (need 85%)"
+    },
+    {
+      "name": "No single debtor dominates",
+      "ok": false,
+      "detail": "Largest debtor is 26% of sales (limit 25%)"
+    },
+    {
+      "name": "Customers mostly pay close to terms",
+      "ok": true,
+      "detail": "5.5% of invoices paid more than 30 days late (limit 10%)"
+    },
+    {
+      "name": "Few credit notes and disputes",
+      "ok": true,
+      "detail": "Credit notes are 1.7% of sales (limit 5%)"
+    },
+    {
+      "name": "Overdue book is small",
+      "ok": true,
+      "detail": "3% of open invoices are >60 days past due (limit 10%)"
+    }
+  ],
+  "recommendation": "Proceed with conditions",
+  "flags": [
+    {
+      "issue": "Rows received",
+      "count": 755,
+      "note": "Before any cleaning."
+    },
+    {
+      "issue": "Duplicate invoice rows removed",
+      "count": 7,
+      "note": "Same invoice number appears twice, likely exported twice. Kept first."
+    },
+    {
+      "issue": "Customer name variants merged",
+      "count": 10,
+      "note": "e.g. 'HyperBasket Market' merged into 'Hyper Basket Markets'. Would otherwise split one debtor into two."
+    },
+    {
+      "issue": "Invoices with missing VAT",
+      "count": 6,
+      "note": "Total equals net. Filled using 15% so totals are comparable. Worth asking the customer."
+    },
+    {
+      "issue": "Due date before invoice date",
+      "count": 3,
+      "note": "Due date rebuilt as invoice date + the customer's usual terms."
+    },
+    {
+      "issue": "Paid before invoiced",
+      "count": 2,
+      "note": "Payment date impossible. Excluded from payment-speed stats, kept in totals."
+    },
+    {
+      "issue": "Credit notes with positive sign",
+      "count": 0,
+      "note": "Sign flipped to negative."
+    }
+  ],
+  "insights": {
+    "ten_days_faster_cash": 158064.2241758242,
+    "late_value": 647814.67,
+    "late_count": 103,
+    "months_runway": 6.6596299295572114,
+    "avg_monthly_outflow": 485213.8383333332,
+    "segment_share": {
+      "Supermarket": 0.6151105169593569,
+      "Hospitality": 0.09863937958429929,
+      "Catering": 0.07621778550145208,
+      "Restaurant": 0.07543637230186814,
+      "Minimarket": 0.05631271501170416,
+      "Cafe chain": 0.049423835711582,
+      "Cafe": 0.016008743883923197,
+      "Bakery": 0.012850651045814114
+    },
+    "segment_days": {
+      "Supermarket": 54.45593869731801,
+      "Hospitality": 64.04545454545455,
+      "Catering": 43.214285714285715,
+      "Restaurant": 34.472527472527474,
+      "Minimarket": 42.65217391304348,
+      "Cafe chain": 28.396551724137932,
+      "Cafe": 19.375,
+      "Bakery": 14.392857142857142
+    },
+    "receipts_monthly": {
+      "2025-10": 13096.880000000001,
+      "2025-11": 212413.94,
+      "2025-12": 463041.13,
+      "2026-01": 436686.97,
+      "2026-02": 350858.85,
+      "2026-03": 360581.81,
+      "2026-04": 573137.13,
+      "2026-05": 632454.94,
+      "2026-06": 470658.70999999996,
+      "2026-07": 426994.78,
+      "2026-08": 471312.48,
+      "2026-09": 483663.97,
+      "2026-10": 191033.02
+    }
+  }
+}

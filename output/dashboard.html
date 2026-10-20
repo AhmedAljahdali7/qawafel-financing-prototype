@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Overview | Al Waha Foods (fictional)</title><style>
+:root{--bg:#f4f6f4;--card:#fff;--ink:#17201c;--mute:#5c6b64;--line:#dfe5e1;--accent:#1d6f5c;--nav:#0f3d33}
+@media (prefers-color-scheme:dark){:root{--bg:#101714;--card:#18221e;--ink:#e8efeb;--mute:#9bb0a6;--line:#2a3a33;--nav:#0a211b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header.top{background:var(--nav);color:#e9f3ef}
+header.top .inner{max-width:1120px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 20px;min-height:58px}
+.brand{font-weight:700;letter-spacing:.2px}.brand span{font-weight:400;opacity:.7;margin-left:8px;font-size:13px}
+nav a{color:#cfe3da;text-decoration:none;padding:8px 12px;border-radius:8px;font-size:14px;display:inline-block}
+nav a:hover{background:rgba(255,255,255,.08)}nav a.on{background:#fff;color:var(--nav);font-weight:600}
+.wrap{max-width:1120px;margin:0 auto;padding:24px 20px 60px}
+h1{font-size:24px;margin:0 0 2px}h2{font-size:16px;margin:0 0 12px}
+.sub{color:var(--mute);margin:0 0 20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:16px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin-bottom:16px}
+.two{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));margin-bottom:16px}
+.two>.card{margin-bottom:0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.kpi b{display:block;font-size:22px;line-height:1.2}.kpi span{color:var(--mute);font-size:12px}
+.decision{border-left:6px solid var(--accent)}
+.decision .big{font-size:26px;font-weight:700}
+.d-proceed{border-left-color:#1d7a46}.d-proceed .big{color:#1d7a46}
+.d-conditions{border-left-color:#b7791f}.d-conditions .big{color:#b7791f}
+.d-stop{border-left-color:#b42318}.d-stop .big{color:#b42318}
+.limit{font-size:20px;font-weight:700}
+ul.checks{list-style:none;margin:10px 0 0;padding:0}
+ul.checks li{padding:8px 0;border-top:1px solid var(--line)}
+ul.checks li b{display:inline-block;width:68px;font-size:12px}
+ul.checks li.ok b{color:#1d7a46}ul.checks li.bad b{color:#b42318}
+ul.checks li span{display:block;margin-left:68px;color:var(--mute);font-size:13px}
+ul.headline{margin:0;padding-left:20px}ul.headline li{margin:8px 0}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:7px 8px;border-top:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--mute);font-weight:600;border-top:none}
+td.n,th.n{text-align:right;white-space:nowrap}
+.scroll{overflow-x:auto}
+.pill{padding:2px 8px;border-radius:99px;font-size:12px;font-weight:600}
+.t-good{background:#d8f1e3;color:#14532d}.t-caution{background:#fcefc7;color:#7a4b00}.t-watch{background:#fbd9d4;color:#8a1c12}
+.note{color:var(--mute);font-size:13px;margin:10px 0 0}
+footer{color:var(--mute);font-size:12px;margin-top:24px;text-align:center}
+@media (max-width:640px){h1{font-size:20px}.kpi b{font-size:19px}}
+</style></head><body>
+<header class="top"><div class="inner"><div class="brand">Al Waha Foods Trading<span>Financing readiness</span></div><nav><a href="dashboard.html" class="on">Overview</a><a href="sales.html">Sales & customers</a><a href="cash.html">Cash & collections</a></nav></div></header>
+<main class="wrap">
+
+<h1>Overview</h1>
+<p class="sub">Suggested decision, facility size and the headline numbers behind them.</p>
+<section class="card decision d-conditions">
+  <h2>Suggested decision</h2>
+  <div class="big">Proceed with conditions</div>
+  <p>Suggested starting facility: <span class="limit">SAR 259,989 to 297,130</span></p>
+  <ul class="checks"><li class="ok"><b>PASS</b> Bank data supports invoices<span>94% of paid invoice value traced to bank credits (need 85%)</span></li><li class="bad"><b>REVIEW</b> No single debtor dominates<span>Largest debtor is 26% of sales (limit 25%)</span></li><li class="ok"><b>PASS</b> Customers mostly pay close to terms<span>5.5% of invoices paid more than 30 days late (limit 10%)</span></li><li class="ok"><b>PASS</b> Few credit notes and disputes<span>Credit notes are 1.7% of sales (limit 5%)</span></li><li class="ok"><b>PASS</b> Overdue book is small<span>3% of open invoices are >60 days past due (limit 10%)</span></li></ul>
+  <p class="note">This is decision support, not a decision. An analyst should confirm the REVIEW items and the data flags before an offer goes to the bank.</p>
+</section>
+<div class="grid"><div class="kpi"><b>SAR 4.92M</b><span>Net sales, 12 months</span></div><div class="kpi"><b>43 days</b><span>Average invoice-to-payment time</span></div><div class="kpi"><b>15%</b><span>Invoices paid over 7 days late</span></div><div class="kpi"><b>71%</b><span>Sales from top 5 customers</span></div><div class="kpi"><b>94%</b><span>Paid value traced to bank</span></div><div class="kpi"><b>SAR 508,236</b><span>Open invoices today</span></div></div>
+<div class="two">
+  <section class="card"><h2>What stands out</h2><ul class="headline"><li>Collecting just 10 days faster would release about <b>SAR 158,064</b> of cash.</li><li>Closing bank balance covers <b>6.7 months</b> of average outflows (SAR 485,214 a month).</li><li><b>SAR 647,815</b> of invoices (103 invoices) were paid more than 7 days late.</li><li><b>Supermarket</b> is the largest segment at 62% of net sales.</li><li>Customer transfers cover <b>94%</b> of paid invoice value, with <b>SAR 147,891</b> of transfers still unexplained.</li></ul></section>
+  <section class="card"><h2>How the limit is worked out</h2><table>
+<tr><td>Open invoices</td><td class="n">508,236</td></tr>
+<tr><td>less: more than 60 days past due</td><td class="n">-17,783</td></tr>
+<tr><td>less: debtors on Watch (not overdue)</td><td class="n">-20,993</td></tr>
+<tr><td>less: trim so no debtor is above 25% of pool</td><td class="n">-98,047</td></tr>
+<tr><td><b>Eligible receivables</b></td><td class="n"><b>371,413</b></td></tr>
+<tr><td>Advance at 70% to 80%</td><td class="n"><b>259,989 to 297,130</b></td></tr></table></section>
+</div>
+<h1 style="margin-top:32px;font-size:20px">Reconciliation &amp; data quality</h1>
+<p class="sub">Whether the invoices and the bank statement agree, and what the cleaning step changed.</p>
+<div class="two">
+  <section class="card"><h2>Invoice to bank reconciliation</h2>
+  <p>641 of 680 paid invoices (94%) were traced to a bank credit, covering 94% of paid value.</p>
+  <table><tr><th>Method</th><th class="n">Invoices</th></tr><tr><td>Reference</td><td class="n">302</td></tr><tr><td>Batch reference</td><td class="n">209</td></tr><tr><td>Amount and date</td><td class="n">126</td></tr><tr><td>Unmatched</td><td class="n">39</td></tr><tr><td>Short-paid</td><td class="n">4</td></tr></table>
+  <p>17 payments arrived short by a total of SAR 6,805 (disputes or bank charges).
+  SAR 300,452 of invoices marked paid could not be found in the statements, and 9 customer transfers worth SAR 147,891 do not map to any invoice. These are the first things to ask the customer about.</p></section>
+  <section class="card"><h2>Bank statement checks</h2><p><b>Balance check passed.</b> Opening balance SAR 2,500,000 plus credits SAR 6,553,911 minus debits SAR 5,822,566 gives closing balance SAR 3,231,345, and every running balance agrees. Lowest balance in the year: SAR 1,922,995.</p></section>
+</div>
+<section class="card"><h2>Data quality findings (what the cleaning step fixed or flagged)</h2><div class="scroll"><table>
+<tr><th>Check</th><th class="n">Count</th><th>What we did</th></tr><tr><td>Rows received</td><td class="n">755</td><td>Before any cleaning.</td></tr><tr><td>Duplicate invoice rows removed</td><td class="n">7</td><td>Same invoice number appears twice, likely exported twice. Kept first.</td></tr><tr><td>Customer name variants merged</td><td class="n">10</td><td>e.g. 'HyperBasket Market' merged into 'Hyper Basket Markets'. Would otherwise split one debtor into two.</td></tr><tr><td>Invoices with missing VAT</td><td class="n">6</td><td>Total equals net. Filled using 15% so totals are comparable. Worth asking the customer.</td></tr><tr><td>Due date before invoice date</td><td class="n">3</td><td>Due date rebuilt as invoice date + the customer's usual terms.</td></tr><tr><td>Paid before invoiced</td><td class="n">2</td><td>Payment date impossible. Excluded from payment-speed stats, kept in totals.</td></tr><tr><td>Credit notes with positive sign</td><td class="n">0</td><td>Sign flipped to negative.</td></tr></table></div></section>
+<footer>Fictional data. Period 2025-10 to 2026-09. Open invoices as of 2026-10-15. Generated by analyze.py.</footer>
+</main></body></html>
