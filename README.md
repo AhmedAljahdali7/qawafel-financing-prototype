@@ -140,6 +140,6 @@ docs/                  screenshots used in this README
 
 A Power BI version of the key figures, built on the same fictional data.
 
-![Power BI dashboard](powerbi_dashboard.png)
+![Power BI dashboard](Qawafel%20Financing%20Dashboard/powerbi_dashboard.png)
 
-Open `docs/Qawafel_Financing_Dashboard_final.pbix` in Power BI Desktop to explore it.
+Open the file `Qawafel Financing Dashboard/Qawafel Financing Dashboard final.pbix` in Power BI Desktop to explore it.
