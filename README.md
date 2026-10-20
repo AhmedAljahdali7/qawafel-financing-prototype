@@ -136,3 +136,10 @@ docs/                  screenshots used in this README
 ```
 
 `output/metrics.json` holds the same numbers as the dashboard in a form other programs can read. It is the small version of the machine-readable file in the bank package described in the written document.
+## Power BI dashboard (bonus)
+
+A Power BI version of the key figures, built on the same fictional data.
+
+![Power BI dashboard](docs/powerbi_dashboard.png)
+
+Open `docs/Qawafel_Financing_Dashboard_final.pbix` in Power BI Desktop to explore it.
